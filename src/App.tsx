@@ -7,8 +7,8 @@ import MyComponent from "./components/MyComponent";
 // import Profiles from "./components/Profile";
 
 interface User {
-  id: number,
-  name: string
+  id: number;
+  name: string;
 }
 
 function App() {
@@ -16,14 +16,17 @@ function App() {
     {
       id: 1,
       name: "Suntiparb",
+      tester: "goku",
     },
     {
       id: 2,
       name: "John",
+      tester: "suntuparb",
     },
     {
       id: 3,
       name: "Tester",
+      tester: "firefox",
     },
   ];
 
@@ -48,7 +51,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React + PWD</h1>
+      <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
