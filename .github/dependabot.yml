@@ -16,5 +16,5 @@ updates:
     directory: "/" # Location of package manifests
     open-pull-requests-limit: 5
     schedule:
-      interval: "dairy"
+      interval: "daily"
     target-branch: "develop"
