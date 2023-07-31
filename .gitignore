@@ -26,3 +26,6 @@ dist-ssr
 # Dev ignore
 /.github/
 /.vscode/
+
+.vscode-test
+.vscode
