@@ -30,7 +30,7 @@ function App() {
     },
   ];
 
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState<number>(0);
 
   const [users, setUsers] = useState<User[]>(defaultUsers);
   // function for setUsers => newUsers
@@ -64,9 +64,11 @@ function App() {
         <br />
 
         {users.map((user) => (
-          <p key={user.id}>
-            {user.id} . {user.name}
-          </p>
+          <>
+            <p key={user.id}>
+              {user.id} . {user.name}
+            </p>
+          </>
         ))}
 
         <MyComponent title="This is props from App.tsx" />
